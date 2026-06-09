@@ -1,0 +1,25 @@
+{
+  "name": "trabalho-de-poo2-importa-o-de-dados",
+  "version": "1.0.0",
+  "description": "Importação de dados: Uso de APIs externas aplicando conceitos de programação assíncrona",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenriqueCezana/Trabalho-de-POO2-Importa-o-de-Dados.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/HenriqueCezana/Trabalho-de-POO2-Importa-o-de-Dados/issues"
+  },
+  "homepage": "https://github.com/HenriqueCezana/Trabalho-de-POO2-Importa-o-de-Dados#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "typescript": "^6.0.3"
+  }
+}
