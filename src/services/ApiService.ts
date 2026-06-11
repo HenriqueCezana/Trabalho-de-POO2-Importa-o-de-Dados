@@ -6,7 +6,7 @@ public static async consultarCNPJ(cnpj: string): Promise<any> {
 
         try {
 
-            cnpj = cnpj.replace(/[^0-9]/g, "");
+            cnpj = cnpj.replace(/[^0-9]/g, "");// este replace trata os cnpj que são passados com ".", "/" e "-" para que não entrem dando erro, evitando uma sequência de vários replaces em seguida um do outro
 
             if (cnpj.length !== 14) {
                 reject("CNPJ inválido. O CNPJ deve conter exatamente 14 dígitos.");
@@ -17,8 +17,9 @@ public static async consultarCNPJ(cnpj: string): Promise<any> {
                 `https://www.receitaws.com.br/v1/cnpj/${cnpj}`
             );
 
+            //response.ok retorna true ou false indicando se a resposta foi bem sucedida ou não
             if (!response.ok) {
-                reject(`ReceitaWS: status HTTP ${response.status}`);
+                reject(`ReceitaWS: status HTTP ${response.status}`); //response.status contém o código de status da resposta, seja ela bem sucedida ou de erro
                 return;
             }
 
@@ -56,8 +57,9 @@ public static async consultarCEP(cep: string): Promise<any> {
                 `https://viacep.com.br/ws/${cep}/json/`
             );
 
+            //response.ok retorna true ou false indicando se a resposta foi bem sucedida ou não
             if (!response.ok) {
-                reject(`Erro ViaCEP: requisição inválida. Status ${response.status}`);
+                reject(`Erro ViaCEP: requisição inválida. Status ${response.status}`); //response.status contém o código de status da resposta, seja ela bem sucedida ou de erro
                 return;
             }
 

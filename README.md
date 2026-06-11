@@ -1,6 +1,9 @@
 # Trabalho-de-POO2-Importa-o-de-Dados
 Importação de dados: Uso de APIs externas aplicando conceitos de programação assíncrona
 
+Trabalho desenvolvido na disciplina de POO2 do curso de Sistemas para Internet - 3º Período
+
+
 Orientações:
 
 1 - Criar as classes concretas PessoaJuridica e Endereco em Typescript:
@@ -43,3 +46,12 @@ Métodos - get, set e toString.
 - Finalizando, deve usar os objetos inseridos na listaPessoaJuridca de RepositorioPessoaJuridica para implementar um forEach que execute o método toString() daqueles objetos.
 
 Ao realizar os testes da sua aplicação, observe se os possíveis erros que devem ser explorados durante a realização de requisições às APIs estão sendo tratados e emitindo mensagens adequadas no console.
+
+
+Referências:
+
+https://developer.mozilla.org/pt-BR/docs/Web/API/Response
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/async_function
+
+https://www.codecademy.com/resources/docs/typescript/promises
